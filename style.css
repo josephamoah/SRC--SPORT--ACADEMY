@@ -1,0 +1,173 @@
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f9ff;
+color:#222;
+line-height:1.6;
+}
+
+header{
+background:#003f88;
+color:white;
+padding:15px 40px;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:1.5rem;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+gap:20px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#90e0ef;
+}
+
+.hero{
+position:relative;
+height:90vh;
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero video{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-1;
+}
+
+.hero-content{
+background:rgba(0,0,0,0.5);
+padding:30px;
+border-radius:10px;
+}
+
+.btn{
+background:#0077b6;
+padding:12px 24px;
+color:white;
+border-radius:6px;
+text-decoration:none;
+display:inline-block;
+margin-top:15px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#023e8a;
+transform:scale(1.05);
+}
+
+.section{
+padding:60px 40px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+footer{
+background:#001d3d;
+color:white;
+padding:30px;
+text-align:center;
+margin-top:40px;
+}
+
+form{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+max-width:700px;
+margin:auto;
+}
+
+input, textarea, select{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+button{
+background:#0077b6;
+color:white;
+padding:12px 20px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:#023e8a;
+}
+
+.search-box{
+padding:10px;
+width:100%;
+max-width:400px;
+margin:20px auto;
+display:block;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+.counter{
+font-size:1rem;
+margin-top:10px;
+}
+
+@media(max-width:768px){
+nav ul{
+flex-direction:column;
+background:#003f88;
+padding:10px;
+}
+}
